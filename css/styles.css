@@ -1,0 +1,159 @@
+:root{
+    --fondo: rgb(193, 193, 193);
+    --fondo2: rgb(4, 4, 95);
+    --white: rgb(255, 255, 255);
+}   
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--fondo);
+    font-family: 'Lato', sans-serif;
+}
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+#header-img{
+    width: 100px;
+    object-fit: contain;
+}
+
+#nav-bar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    background-color: var(--fondo2);
+    padding: 5px;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 0 10px;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.titulo{
+    font-size: 30px;
+    margin-left: 15px;
+    font-weight: 800;
+    font-family: 'Lato', sans-serif;
+    color: white;
+}
+
+
+.slide{
+    width: 35vw;
+    height: 600px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-left: 35vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container img{
+    mix-blend-mode: multiply;
+}
+
+
+.cards{ 
+    margin: 8rem auto; 
+    width: 62vw;
+    margin-left: 42vh;
+}
+
+
+h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+footer{
+    margin-top: 40px;
+    width: 100%;
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(0, 0, 85);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social .menu-cookies{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.social{
+    height: 50%;
+    width: 70%;
+    border-radius: 50px;
+    border: 1px solid yellow;
+    margin: 1rem;
+}
+
+.socia{
+    text-decoration: none;
+    justify-content: space-around;
+    margin: 100px;
+    color: white;
+}
+
+.menu-cookies{
+    list-style-type: none;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+    margin-right: 120px;
+}
+
+
+
+
+
+@media only screen and (min-width: 600px){
+    #nav-bar{
+        flex-direction: row;
+    }
+}
